@@ -12,6 +12,7 @@
 							<input type="hidden" value="position" name="orderby"/>
 							<input type="hidden" value="desc" name="orderway"/>
 							<input type="text" name="search_query" value="{if isset($smarty.get.search_query)}{$smarty.get.search_query|escape:'html':'UTF-8'}{/if}" />
+							<img src="./img/magnifier.png" alt="Search" height="29" width="29"/>
 						</p>
 					</form>
 				</li>
