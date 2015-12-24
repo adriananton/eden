@@ -4,7 +4,7 @@
 #header .shopping_cart {
   position: relative;
   float: right;
-  padding-top: 50px; }
+  padding-top: 1px; }
   #header .shopping_cart > a:first-child:after {
     content: "\f0d7";
     font-family: "FontAwesome";
@@ -28,7 +28,7 @@
       float: none;
       width: 100%; } }
   .shopping_cart > a:first-child {
-    padding: 7px 10px 14px 16px;
+    padding: 3px 10px 7px 16px;
     background: #333;
     display: block;
     font-weight: bold;
@@ -40,7 +40,8 @@
         display: none !important; } }
     .shopping_cart > a:first-child b {
       color: #fff;
-      font: 600 18px/22px "Open Sans", sans-serif;
+      /* font: 600 18px/22px "Open Sans", sans-serif; */
+	  font: 400 16px/20px "FontMenu";
       padding-right: 5px; }
     .shopping_cart > a:first-child:before {
       content: "\f07a";
@@ -162,7 +163,7 @@
 ********************************************************************/
 #header .cart_block {
   position: absolute;
-  top: 95px;
+  top: 40px;
   right: 0;
   z-index: 100;
   display: none;

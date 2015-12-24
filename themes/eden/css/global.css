@@ -702,6 +702,9 @@ header .row #header_logo,
 
   .col-sm-4, header .row #header_logo {
     width: 33.33333%; }
+ 
+  header .row #header_logo {
+    width: 100%; }
 
   .col-sm-5 {
     width: 41.66667%; }
@@ -5737,7 +5740,7 @@ header {
   background: #fff;
   padding-bottom: 15px; }
   header .banner {
-    background: black;
+    background: white;
     max-height: 100%; }
     header .banner .row {
       margin: 0px; }
