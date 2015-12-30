@@ -23,6 +23,37 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <!-- Block Newsletter module-->
+<div class="col-xs-4 text-center"><h4>The EXPERIENCE</h4>
+	<div class="type-text">
+		<h5><a href="#">Our Philosophy</a></h5>
+	</div>
+	<div class="type-text">
+		<h5><a href="#">How is done</a></h5>
+	</div>
+</div>
+<div class="col-xs-4 text-center"><h4>Usefull INFORMATIONS</h4>
+	<div class="type-text">
+		<h5><a href="#">Contact</a></h5>
+	</div>
+	<div class="type-text">
+		<h5><a href="#">Customer Service</a></h5>
+	</div>
+	<div class="type-text">
+		<h5><a href="#">Payment &amp; shipment</a></h5>
+	</div>
+	<div class="type-text">
+		<h5><a href="#">Return Policy</a></h5>
+	</div>
+	<div class="type-text">
+		<h5><a href="#">Workroom</a></h5>
+	</div>
+	<div class="type-text">
+		<h5><a href="#">Privacy Policy</a></h5>
+	</div>
+	<div class="type-text">
+		<h5><a href="#">Legal</a></h5>
+	</div>
+</div>
 <div id="newsletter_block_left" class="block">
 	<h4>{l s='Newsletter' mod='blocknewsletter'}</h4>
 	<div class="block_content">
@@ -37,7 +68,60 @@
 		</form>
 	</div>
     {hook h="displayBlockNewsletterBottom" from='blocknewsletter'}
+	<div id="social_block" class="pull-left">
+		<ul>
+				<li class="facebook">
+					<a class="_blank" href="http://www.facebook.com">
+						<span>{l s='Facebook' mod='blocksocial'}</span>
+					</a>
+				</li>
+
+				<li class="twitter">
+					<a class="_blank" href="http://www.twitter.com">
+						<span>{l s='Twitter' mod='blocksocial'}</span>
+					</a>
+				</li>
+			{if isset($rss_url) && $rss_url != ''}
+				<li class="rss">
+					<a class="_blank" href="{$rss_url|escape:html:'UTF-8'}">
+						<span>{l s='RSS' mod='blocksocial'}</span>
+					</a>
+				</li>
+			{/if}
+				<li class="youtube">
+					<a class="_blank" href="http://www.youtube.com">
+						<span>{l s='Youtube' mod='blocksocial'}</span>
+					</a>
+				</li>
+				<li class="google-plus">
+					<a class="_blank" href="http://plus.google.com/" rel="publisher">
+						<span>{l s='Google Plus' mod='blocksocial'}</span>
+					</a>
+				</li>
+			{if isset($pinterest_url) && $pinterest_url != ''}
+				<li class="pinterest">
+					<a class="_blank" href="{$pinterest_url|escape:html:'UTF-8'}">
+						<span>{l s='Pinterest' mod='blocksocial'}</span>
+					</a>
+				</li>
+			{/if}
+			{if isset($vimeo_url) && $vimeo_url != ''}
+				<li class="vimeo">
+					<a class="_blank" href="{$vimeo_url|escape:html:'UTF-8'}">
+						<span>{l s='Vimeo' mod='blocksocial'}</span>
+					</a>
+				</li>
+			{/if}
+				<li class="instagram">
+					<a class="_blank" href="http://www.instagram.com/">
+						<span>{l s='Instagram' mod='blocksocial'}</span>
+					</a>
+				</li>
+		</ul>
+		<h4>{l s='Follow us' mod='blocksocial'}</h4>
+	</div>
 </div>
+
 <!-- /Block Newsletter module-->
 {strip}
 {if isset($msg) && $msg}

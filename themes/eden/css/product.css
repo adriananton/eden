@@ -13,7 +13,7 @@
   font-weight: 200;
   margin: 3px 0 8px;
   font-size: 19px;
-  font-family: "Open Sans", sans-serif; }
+  font-family: FontMenu; }
 
 .box-security .product-heading-h5 {
   margin: 3px 0 -8px; }
@@ -785,7 +785,7 @@ table.table-product-discounts {
   font-weight: 600;
   font-size: 29px;
   line-height: 32px;
-  font-family: "Open Sans", sans-serif;
+  font-family: FontMenu;
   color: #333; }
   @media (max-width: 991px) {
     .our_price_display {

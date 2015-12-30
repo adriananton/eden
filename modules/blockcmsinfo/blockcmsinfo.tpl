@@ -26,7 +26,7 @@
 <!-- MODULE Block cmsinfo -->
 <div id="cmsinfo_block">
 		{foreach from=$infos item=info}
-			<div class="col-xs-6">{$info.text}</div>
+			<div class="col-xs-4">{$info.text}</div>
 		{/foreach}
 </div>
 <!-- /MODULE Block cmsinfo -->
